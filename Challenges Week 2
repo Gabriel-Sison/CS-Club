@@ -14,8 +14,8 @@ percent_increase_needed = good_grade - grade_without_final
 final_grade_needed = percent_increase_needed / final_percent * 100
 print("You need to score " + str(final_grade_needed) + " in your final to get a 4.0 for the class.")
 
-# Challenge 3, create program that finds the coordinate of the vertex of a parabola
-from math import sqrt;
+# Challenge 2, create program that finds the coordinate of the vertex of a parabola
+import math
 
 print("In the format of ax^2 + bx + c:")
 
@@ -28,10 +28,7 @@ b = int(input())
 print("What is c? ", end = '')
 c = int(input())
 
-root1 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a)
-root2 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a)
+root1 = (-b + math.sqrt(b * b - 4 * a * c)) / (2 * a)
+root2 = (-b - math.sqrt(b * b - 4 * a * c)) / (2 * a)
 
-x_point = (root1 + root2) / 2
-y_point = a * pow(x_point, 2) + b * x_point + c
-
-print(f"In the equation ({a})x^2 + ({b})x + ({c}), your vertex point is ({x_point}, {y_point})")
+print(f"In the equation ({a})x^2 + ({b})x + ({(c)}), your roots are {root1} and {root2}")
