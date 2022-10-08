@@ -32,3 +32,21 @@ root1 = (-b + math.sqrt(b * b - 4 * a * c)) / (2 * a)
 root2 = (-b - math.sqrt(b * b - 4 * a * c)) / (2 * a)
 
 print(f"In the equation ({a})x^2 + ({b})x + ({(c)}), your roots are {root1} and {root2}")
+
+print("Name: ", end = '')
+Name = input()
+
+print("Age: ", end = '')
+Age = input()
+
+print("Location: ", end = '')
+Location = input()
+
+print("Job: ", end = '')
+Job = input()
+
+print("List of Hobbies: ", end = '')
+Hobbies = input()
+
+print(f'Hello! My name is {Name}, I am {Age} years old, and I currently live in {Location}. I currently work as a {Job}, '
+      f'and my hobbies are as follows: {Hobbies}.')
