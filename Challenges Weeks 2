@@ -1,0 +1,15 @@
+print("What percent of your grade is the final? ", end = '')
+final_percent = int(input())
+
+print("What is your current percentage grade in the class?", end = ' ')
+current_grade = int(input())
+
+print("What percentage grade do you need to get a 4.0?", end = ' ')
+good_grade = int(input())
+
+grade_without_final = ((100 - final_percent) * current_grade)/100
+
+percent_increase_needed = good_grade - grade_without_final
+
+final_grade_needed = percent_increase_needed / final_percent * 100
+print("You need to score " + str(final_grade_needed) + " in your final to get a 4.0 for the class.")
