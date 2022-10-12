@@ -1,3 +1,4 @@
+# Optional Challenge. What grade do you need on your final to get a 4.0?
 print("What percent of your grade is the final? ", end = '')
 final_percent = int(input())
 
@@ -33,6 +34,7 @@ root2 = (-b - math.sqrt(b * b - 4 * a * c)) / (2 * a)
 
 print(f"In the equation ({a})x^2 + ({b})x + ({(c)}), your roots are {root1} and {root2}")
 
+# Challenge 2: Dating profile bio.
 print("Name: ", end = '')
 Name = input()
 
