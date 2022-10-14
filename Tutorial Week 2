@@ -1,0 +1,19 @@
+# Calculating how much you have to pay in taxes
+
+print("How much money do you make in a year?", end = ' ') # Communicate to person
+income = int(input()) # Create variable, make it an integer, have it be an input from user
+
+print("How much do you spend per month in rent?", end = ' ')
+rent = int(input())
+yearlyRent = 12 * rent
+
+print("How much do you want to save by the end of the year?", end = ' ')
+savings = int(input())
+
+moneyAvailable = income - yearlyRent - savings
+moneyWeekly = moneyAvailable / 53
+moneyMonthly = moneyAvailable / 12
+
+print(f"You can spend ${moneyAvailable} this year if you want to save ${savings} this year. "
+      f"This roughly translates to spending ${round(moneyWeekly, 2)} a week, or ${round(moneyMonthly,2)} a month.")
+
